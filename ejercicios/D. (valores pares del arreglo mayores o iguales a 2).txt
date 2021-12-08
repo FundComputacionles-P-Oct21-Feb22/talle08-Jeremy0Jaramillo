@@ -1,0 +1,27 @@
+1.Inicio
+
+2.dias(5) <-- "Lunes, Martes, Miércoles, Jueves, Viernes"
+3.indice, i[0-n]
+4.ventas, d[0-n]
+5.cadena <-- ""
+6.cadenafinal(5) <-- ""
+
+7.Para (indice <-- 0, indice < 5, 1)
+
+	7.Escribir ("Ingrese las ventas del día " + dias[indice]) //10 //9 //20 //29 //100
+	8.>> ventas
+	9.cadena <- dias[indice] + "" + "$" + ventas + "\n"
+	10.cadenafinal[indice] <- cadena
+	//Se asigna cadena por cada índice de cadenafinal
+
+10.Fin_Para
+
+11. Para (indice <-- 1, indice < 5, 1)   //índice empieza desde 1 para no tomar en cuenta el 0
+12. Si (indice MOD 2 = 0) entonces  
+	13.Escribir cadenafinal[indice] + "\n"
+	//Miércoles $20
+	//Viernes $100
+14.Fin_Si
+15.Fin_Para
+
+12.Fin
